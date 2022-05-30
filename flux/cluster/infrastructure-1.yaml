@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: infrastructure_3
+  name: infrastructure-1
   namespace: flux-system
 spec:
   interval: 60m0s
@@ -11,8 +11,8 @@ spec:
   timeout: 5m    
   retryInterval: 5m
   dependsOn:
-    - name: infrastructure_2  
+    - name: repositories  
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./flux/infrastructure_3
+  path: ./flux/infrastructure-1
