@@ -1,0 +1,38 @@
+apiVersion: v1
+data:
+    address: ENC[AES256_GCM,data:4QrFl4onfnz6XiZxZ/RTO7kNeZ20R0yOVwQL5XBaQzDylnxKzaFVTlk9OWweRh9BkTKVcoqY1XA/9UoDQLRr2fXgE2ZzVF715H/FXlz9zPGEhykzh5uUP6dcqNQpVUiwBFQ34pgUmtqRK2M2/wAA1/0jR5tdSxblyoHYRWdIwIuEQZWKI13Dx5T+TA0leEk3Jll41JIY01ljTlkdMbseHA==,iv:TsXXzNCiffWopey1yVmjs4UThU9aBuepEDn6edmZiSI=,tag:hWVvCiLJad/vGkrR68gNhw==,type:str]
+kind: Secret
+metadata:
+    name: discord-url
+    namespace: flux-system
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-05-30T18:25:15Z"
+    mac: ENC[AES256_GCM,data:tozZwmUYMPuuF92+8bAEkTavP7ByBRu2gc9VhBGSIKxf4YlklKsP4imZqfIynv3N/r4zFq+yAxXkgRlpbSuVaH9jbliA70K1WhqfPhlQprY1A/MALQXOqXfVMrmydGUkY1zkf4yuMocAqNJ3kJ7l1hTmQwYswGS1tHMX9bPiwWk=,iv:fftpZOVd3t1d9tJ8jrXOAEwNK8uniONiLXZUY1di7eU=,tag:yZOneL/6hRn+p8y0qqqJOQ==,type:str]
+    pgp:
+        - created_at: "2022-05-30T18:25:15Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA1AjMVyk7JQYAQ//S1DroQjt5VOfG+IqpUYrprF1xMoFzF4m3UoHHObMbBP5
+            TFpbeO/1zwyJKIyIFW1IYzXofdtL0iwBdLvwWx0A92Pb8dLiCQm8aTLDkP6/Pa69
+            Q7FctJk65cLlVNY6a1YLh3H2DnpsQ1PGd3szndBE7VcF9JPSPC1sS3FryG/rNt+4
+            Hb3w3hSx6sLyAOAq+rWZS1B51vmPlELFLw0Od7HZU9dHdz2hSzulph2Fsd8JKv7I
+            cOA/p0PTCXIJ7CIearn8vxYC4W4s1thSqkJsdO++KDasvhdqQQSFdED1goBwgpK/
+            r0QP8ZiMEg2vEPOrn92qY1MPn8AYiAIWewFFgiWVfnf7qG2Z0gkPsQ+YQxk//vGf
+            vAVTg7dDdRVO2aZVLj59AO+Coupr8tKM49URGNQv7o0G7wrfarKZD/hiBGS77IfZ
+            fK99ohZGI9UlTxd2MqeJxK0XBfrBcVit7Q9kJ24+G52B1gv5gzOxz0ySots1JtKN
+            Cn1ADoMRsYe3EQYYzTFX2yuIgGuwR8lJY7wqD0mofcFw2nQEWLMoD5Q9Nmjvlghf
+            SpI/FJg/rCncjoMNVioC0w/7n3IY2xkMoyCx9j2yndqaosYnUhjAIhcJBpvnvjfu
+            21LC4+2lcRHG/lzz1QCYLffSi+9wX0qJwQrDFuOLxFPVB9EVqf0wrHDnawQJH1rS
+            XgEh5o+reGeoFqO6qGQXoR4kiP/ac6irAKJhb55o7xa5eiuSypyGY0eNffxYWfaQ
+            ihMTp2HVcy5zsWXk1C+wXWweMWtD2FZbFNPTHrP3tRKvTbzRrTrNdLsiFK0c2mw=
+            =iqId
+            -----END PGP MESSAGE-----
+          fp: 5838FDEE08FCFA8AC706104ABB1D1E08286816C4
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
