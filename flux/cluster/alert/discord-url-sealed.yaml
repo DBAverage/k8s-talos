@@ -3,7 +3,6 @@ data:
     address: ENC[AES256_GCM,data:4QrFl4onfnz6XiZxZ/RTO7kNeZ20R0yOVwQL5XBaQzDylnxKzaFVTlk9OWweRh9BkTKVcoqY1XA/9UoDQLRr2fXgE2ZzVF715H/FXlz9zPGEhykzh5uUP6dcqNQpVUiwBFQ34pgUmtqRK2M2/wAA1/0jR5tdSxblyoHYRWdIwIuEQZWKI13Dx5T+TA0leEk3Jll41JIY01ljTlkdMbseHA==,iv:TsXXzNCiffWopey1yVmjs4UThU9aBuepEDn6edmZiSI=,tag:hWVvCiLJad/vGkrR68gNhw==,type:str]
 kind: Secret
 metadata:
-    creationTimestamp: null
     name: basic-auth
     namespace: default
 sops:
