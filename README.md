@@ -69,6 +69,15 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 
         flux reconcile ks $kustomization --with-source        
 
+- Trace kustomization
+
+        flux trace kustomization $kustomization
+
+- Get Status of all kustomizations
+
+        kubectl get kustomizations  -A
+
+        
 # To add a new helm release
 - create subfolder for namespace
 - create HelmRepository CRD definition
