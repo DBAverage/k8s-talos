@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: nfs
 resources:
   - namespace.yaml
-  - repository.yaml
   - release.yaml
