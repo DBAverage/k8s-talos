@@ -4,13 +4,15 @@ metadata:
   name: infrastructure
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 60m0s
+  prune: true
+  force: true # recreate resources on immutable fields changes
+  wait: true
+  timeout: 5m    
+  retryInterval: 5m
   dependsOn:
     - name: repositories  
   sourceRef:
     kind: GitRepository
     name: flux-system
   path: ./flux/infrastructure
-  prune: true
-  wait: true
-  timeout: 5m    
