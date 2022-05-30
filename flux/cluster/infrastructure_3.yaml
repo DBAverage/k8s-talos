@@ -1,0 +1,18 @@
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+kind: Kustomization
+metadata:
+  name: infrastructure_3
+  namespace: flux-system
+spec:
+  interval: 60m0s
+  prune: true
+  force: true # recreate resources on immutable fields changes
+  wait: true
+  timeout: 5m    
+  retryInterval: 5m
+  dependsOn:
+    - name: infrastructure_2  
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  path: ./flux/infrastructure_3
