@@ -5,8 +5,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m0s
+  dependsOn:
+    - name: core  
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./flux/core
+  path: ./flux/infrastructure
   prune: true
