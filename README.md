@@ -65,6 +65,10 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 
         helm show values $repo/$chart > $file
 
+- Reconcile kustomization immediately
+
+        flux reconcile ks $kustomization --with-source        
+
 # To add a new helm release
 - create subfolder for namespace
 - create HelmRepository CRD definition
