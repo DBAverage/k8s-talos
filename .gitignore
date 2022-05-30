@@ -1,5 +1,7 @@
-scratch.yml
-talos/ansible/files/controlplane_kube*.yaml
-talos/ansible/files/worker_kube*.yaml
-talosconfig
-talos/ansible/kubeconfig
+**scratch.yml
+**controlplane_kube*.yaml
+**worker_kube*.yaml
+**talosconfig
+**kubeconfig
+**.terraform
+**terraform.tfstate.backup
