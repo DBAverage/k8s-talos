@@ -3,5 +3,5 @@ kind: Kustomization
 namespace: flux-system
 resources:
   #- discord-url-sealed.yaml
-  - provider.yaml
+  #- provider.yaml
   - alert.yaml
