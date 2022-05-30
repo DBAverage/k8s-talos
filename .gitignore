@@ -1,0 +1,5 @@
+scratch.yml
+talos/ansible/files/controlplane_kube*.yaml
+talos/ansible/files/worker_kube*.yaml
+talosconfig
+talos/ansible/kubeconfig

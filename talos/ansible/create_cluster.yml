@@ -1,0 +1,20 @@
+- name: generate configs
+  import_playbook: generate_configs.yml
+
+- name: create control node 1
+  import_playbook: create_control_node.yml
+
+- name: create control node 2
+  import_playbook: create_control_node.yml
+
+- name: create control node 3
+  import_playbook: create_control_node.yml
+
+- name: create worker node 1
+  import_playbook: create_worker_node.yml
+
+- name: create worker node 2
+  import_playbook: create_worker_node.yml
+
+- name: bootstrap cluster
+  import_playbook: bootstrap_cluster.yml

@@ -1,0 +1,16 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: discord-url
+  namespace: flux-system
+spec:
+  encryptedData:
+    address: AgA8BS0yHaXm949eTiT1kRCsx6hAVBkTOJpaG6Z70wyJ0khVGyWvRgwULCKCsIhcghc/uo2R2pA712gTQGn9EYLjlNAuWY/29yVdKXVM+lI4/8n5o/i8X0fvMEDNkSYOOBxU7T3kfzWAAGVvj3fjf2o2NrkfPMIxsI/zz1vE576WWez+RfKbK/Bqns/vAqa8FsSpelrGqO/Oo1UP2qobmW0/FGJ8SZITm4NiBgboGnevyDBGCqCJZYbsZfLGI2KfGUvkn3FUoaUaPbx1EWovOQkPx1erW7/ZS9KW6eKZiY/jo1OCTQCfxyo8BWdlx2GF+DFXdPWJTu70YPEpFIYdrzMk+nrNqd35OZpZ9vyLuC9tJuWAI3O7L35LGxgtuhQ4cuQolrXBMWupuE1mg6kjDwXfvQU+++CDM2arsR5HhNE1+wpxXrxQ9z7T6vRLZhby6CU+CHJ6UcKYIkbNhF2z0mO2zoXsIOu+sHRdLBgm7T6iaWI4YE+EMITJiDw5I08Q18+QSPhoGN45WwOuRrHACkyNC2TWt1AU0d/2JR0EQeYiQmPigybLepn+btQ4zt7ucfsOIRRkZmlgMj+w/r5g5/14KeKzwRn18AxzBwSuFNRWxsDfrsgYJTHcoAXMEdM+fRhvL1hdZRa771uqsLGnN5TcajIK5vAuxvMbSv+ZiLpfANSSj0NpvTRBYRezmr2jnRQftv5NEr0/mD7IuXQbqZ0DJFQ4Vy26D3RgFzY1Psgg2iLkB/AmlNkUalSefSXWjn2jjiMKsNWDcWrpIltL/QlteSHm2jqpFP5PDhHQlr0hzgO3vaNcfQ1vAXGJB4AzArhHIMKEKMnZWAoiu5GTVQr6LvTH0Kp28iM=
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: discord-url
+      namespace: flux-system
+
