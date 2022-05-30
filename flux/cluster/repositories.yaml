@@ -9,7 +9,7 @@ spec:
   force: true # recreate resources on immutable fields changes
   wait: true
   timeout: 5m    
-  retryInterval: 5m
+  retryInterval: 2m
   sourceRef:
     kind: GitRepository
     name: flux-system
