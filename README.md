@@ -43,7 +43,7 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 
 - tail flux logs
 
-        flux logs --follow
+        flux logs -A --follow
 
 - get pod logs
 
