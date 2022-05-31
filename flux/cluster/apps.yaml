@@ -11,7 +11,7 @@ spec:
   timeout: 5m    
   retryInterval: 5m
   dependsOn:
-    - name: infrastructure_3
+    - name: infrastructure-3
   sourceRef:
     kind: GitRepository
     name: flux-system 
