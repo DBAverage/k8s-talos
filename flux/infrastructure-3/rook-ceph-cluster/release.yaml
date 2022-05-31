@@ -23,9 +23,59 @@ spec:
       enabled: true
       ssl: false  
     resources:
-      requests:
-        cpu: 100m
-        memory: 128Mi
-      limits:
-        cpu: 1000m
-        memory: 256Mi         
+      mgr:
+        limits:
+          cpu: "250m" # "1000m"
+          memory: "256Mi" # "1Gi"
+        requests:
+          cpu: "100m" # "500m"
+          memory: "100Mi" # "512Mi"
+      mon:
+        limits:
+          cpu: "500m" # "2000m"
+          memory: "500Mi" # "2Gi"
+        requests:
+          cpu: "250m" # "1000m"
+          memory: "256Mi" # "1Gi"
+      osd:
+        limits:
+          cpu: "500m" # "2000m"
+          memory: "1Gi" # "4Gi"
+        requests:
+          cpu: "250m" # "1000m"
+          memory: "1Gi" # "4Gi"
+      prepareosd:
+        limits:
+          cpu: "250" # "500m"
+          memory: "100Mi" # "200Mi"
+        requests:
+          cpu: "100m" # "500m"
+          memory: "50Mi"
+      mgr-sidecar:
+        limits:
+          cpu: "250m" # "500m"
+          memory: "100Mi"
+        requests:
+          cpu: "100m"
+          memory: "40Mi"
+      crashcollector:
+        limits:
+          cpu: "250m" # "500m"
+          memory: "60Mi"
+        requests:
+          cpu: "100m"
+          memory: "60Mi"
+      logcollector:
+        limits:
+          cpu: "250m" # "500m"
+          memory: "256Mi" # "1Gi"
+        requests:
+          cpu: "100m"
+          memory: "100Mi"
+      cleanup:
+        limits:
+          cpu: "256m" # "500m"
+          memory: "256Mi" # "1Gi"
+        requests:
+          cpu: "100m" # "500m"
+          memory: "100Mi"
