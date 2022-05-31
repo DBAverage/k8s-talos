@@ -16,5 +16,11 @@
 - name: create worker node 2
   import_playbook: create_worker_node.yml
 
+- name: create worker node 3
+  import_playbook: create_worker_node.yml
+
+- name: add disk
+  import_playbook: add_disk.yml
+
 - name: bootstrap cluster
   import_playbook: bootstrap_cluster.yml

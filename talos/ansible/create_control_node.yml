@@ -13,8 +13,8 @@
       datastore: esxi-2.2
       vm_folder: Datacenter/vm/Kubernetes
 
-      cpu_cores: 2
-      ram_mb: 4096
+      cpu_cores: 4
+      ram_mb: 8192
       disk_size_gb: 10
       
       cluster_name: k8s
@@ -130,6 +130,23 @@
             state: present
         validate_certs: false
       register: os_disk  
+
+    - name: Add disks
+      community.vmware.vmware_guest_disk:
+        hostname: "{{ vcenter_hostname }}"
+        username: "{{ vcenter_username }}"
+        password: "{{ vcenter_password }}"
+        name: "{{ guest_name }}"
+        datacenter: "{{ datacenter }}"
+        disk: #name, uuid, moid
+          - size_gb: 100
+            datastore: "{{ datastore }}"
+            unit_number: 1
+            state: present
+            type: thin
+            scsi_controller: 0
+        validate_certs: false
+      register: new_os_disk
 
     - name: start guest
       community.vmware.vmware_guest_powerstate:

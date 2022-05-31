@@ -131,6 +131,23 @@
         validate_certs: false
       register: os_disk  
 
+    - name: Add disks
+      community.vmware.vmware_guest_disk:
+        hostname: "{{ vcenter_hostname }}"
+        username: "{{ vcenter_username }}"
+        password: "{{ vcenter_password }}"
+        name: "{{ guest_name }}"
+        datacenter: Datacenter
+        disk: #name, uuid, moid
+          - size_gb: 100
+            datastore: "{{ datastore }}"
+            unit_number: 1
+            state: present
+            type: thin
+            scsi_controller: 0
+        validate_certs: false
+      register: new_os_disk
+
     - name: start guest
       community.vmware.vmware_guest_powerstate:
         hostname: "{{ vcenter_hostname }}"

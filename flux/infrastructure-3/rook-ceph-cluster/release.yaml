@@ -16,3 +16,13 @@ spec:
         name: rook-release
         namespace: flux-system
       interval: 12h
+  values:
+    toolbox:
+      enabled: false      
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 1000m
+        memory: 256Mi          
