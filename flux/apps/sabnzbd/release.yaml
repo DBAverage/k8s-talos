@@ -25,8 +25,8 @@ spec:
       HOST_WHITELIST_ENTRIES: >-
         sabnzbd.mushroomkingdom.io
     persistence:
-      config:
-        enabled: true
+      #config:
+        #enabled: true
       #media:
         #enabled: true
         #type: custom

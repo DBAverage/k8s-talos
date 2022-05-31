@@ -27,13 +27,13 @@ spec:
       runAsGroup: 568
       fsGroup: 568      
     persistence:
-      config:
-        enabled: true
-      media:
-        enabled: true
-        type: custom
-        volumeSpec:
-          nfs:
-            server: 192.168.1.12
-            path: /volume1/NAS
-        mountPath: /NAS
+      #config:
+        #enabled: true
+      #media:
+        #enabled: true
+        #type: custom
+        #volumeSpec:
+          #nfs:
+            #server: 192.168.1.12
+            #path: /volume1/NAS
+        #mountPath: /NAS
