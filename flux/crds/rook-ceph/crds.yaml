@@ -9,3 +9,4 @@ spec:
   sourceRef:
     kind: GitRepository
     name: rook-ceph-source
+    namespace: flux-system
