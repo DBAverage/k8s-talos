@@ -77,7 +77,11 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 
         kubectl get kustomizations  -A
 
-        
+- Force recreation of helmrelease
+
+        flux suspend helmrelease -n $namespace $release
+        flux resume helmrelease -n $namespace $release
+
 # To add a new helm release
 - create subfolder for namespace
 - create HelmRepository CRD definition
