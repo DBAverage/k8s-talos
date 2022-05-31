@@ -67,7 +67,7 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 
 - Reconcile kustomization immediately
 
-        flux reconcile ks $kustomization --with-source        
+        flux reconcile ks flux-system --with-source       
 
 - Trace kustomization
 
