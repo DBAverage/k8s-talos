@@ -18,10 +18,32 @@ spec:
       interval: 12h
   values:
     toolbox:
-      enabled: false      
+      enabled: true   
+      resources:
+        limits:
+          cpu: "500m"
+          memory: "500Mi" # "1Gi"
+        requests:
+          cpu: "100m"
+          memory: "128Mi" 
+
     dashboard:
       enabled: true
       ssl: false  
+
+    cephFileSystems:
+        spec:
+          metadataServer:
+            resources:
+              limits:
+                cpu: "599m" # "2000m"
+                memory: "500Mi" # "4Gi"
+              requests:
+                cpu: "250m" # "1000m"
+                memory: "500Mi" # "4Gi"
+        storageClass:
+          enabled: false   
+
     resources:
       mgr:
         limits:
