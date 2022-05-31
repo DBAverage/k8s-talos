@@ -42,7 +42,20 @@ spec:
                 cpu: "250m" # "1000m"
                 memory: "500Mi" # "4Gi"
         storageClass:
-          enabled: false   
+          enabled: false
+
+    cephObjectStores:
+        spec:
+          gateway:
+            resources:
+              limits:
+                cpu: "500m" # "2000m"
+                memory: "500Mi" # "2Gi"
+              requests:
+                cpu: "250m" # "1000m"
+                memory: "256Mi" # "1Gi"
+        storageClass:
+          enabled: false
 
     resources:
       mgr:
