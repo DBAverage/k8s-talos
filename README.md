@@ -82,6 +82,14 @@ This repo is intented for my own personal use controlling the kubernetes setup i
         flux suspend helmrelease -n $namespace $release
         flux resume helmrelease -n $namespace $release
 
+- flux equivalent to helm uninstall
+
+        flux delete helmrelease -n $namespace $release
+
+- reset talos node
+
+        talosctl reset --system-labels-to-wipe STATE --system-labels-to-wipe EPHEMERAL --reboot -n $node_ip_address
+
 # To add a new helm release
 - create subfolder for namespace
 - create HelmRepository CRD definition

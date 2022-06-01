@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: mayastor-control-plane
+  namespace: flux-system  
+spec:
+  interval: 30m
+  url: https://github.com/openebs/mayastor-control-plane.git
+  ref:
+    tag: v1.0.1
+  ignore: |
+    # exclude all
+    /*
+    # except
+    !/deploy
