@@ -30,6 +30,10 @@
         name: "{{ guest_name }}"
         state: poweredoff
         validate_certs: False
+      register: power_down
+      failed_when:
+        - "{{ power_down.failed == true }}"
+        - "{{ power_down.msg != 'Folder is required parameter while deploying new virtual machine' }}"
 
     - name: remove guest 
       community.vmware.vmware_guest:
@@ -41,6 +45,10 @@
         state: absent     
         validate_certs: False
 
+    - name: remove node from cluster
+      command: kubectl delete node "{{ guest_name }}"
+
     - name: debug guest_name
       debug:
         msg: "Deleted {{ guest_name }}"
+

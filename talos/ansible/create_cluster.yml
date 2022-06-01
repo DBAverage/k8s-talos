@@ -20,7 +20,7 @@
   import_playbook: create_worker_node.yml
 
 - name: add disk
-  import_playbook: add_disk.yml
+  import_playbook: add_disk_to_all_nodes.yml
 
 - name: bootstrap cluster
   import_playbook: bootstrap_cluster.yml
