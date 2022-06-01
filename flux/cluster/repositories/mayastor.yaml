@@ -12,5 +12,5 @@ spec:
   ignore: |
     # exclude all
     /*
-    # path to crds
-    !/cluster/examples/kubernetes/ceph/crds.yaml
+    # except
+    !/deploy
