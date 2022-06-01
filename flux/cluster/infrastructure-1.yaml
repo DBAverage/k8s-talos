@@ -10,8 +10,8 @@ spec:
   wait: true
   timeout: 5m    
   retryInterval: 2m
-  dependsOn:
-    - name: crds  
+  #dependsOn:
+    #- name: crds  
   sourceRef:
     kind: GitRepository
     name: flux-system

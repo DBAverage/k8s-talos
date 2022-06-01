@@ -10,8 +10,8 @@ spec:
   wait: true
   timeout: 5m    
   retryInterval: 2m
-  dependsOn:
-    - name: infrastructure-2  
+  #dependsOn:
+    #- name: infrastructure-2  
   sourceRef:
     kind: GitRepository
     name: flux-system
