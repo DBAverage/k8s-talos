@@ -12,6 +12,8 @@ spec:
   ignore: |
     # exclude all
     /*
+    /deploy/terraform
+    /deploy/jaeger-operator
     # except
     !/deploy/operator-rbac.yaml
     !/deploy/mayastorpoolcrd.yaml
