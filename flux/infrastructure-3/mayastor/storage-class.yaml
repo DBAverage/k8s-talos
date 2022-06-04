@@ -10,4 +10,5 @@ parameters:
   ioTimeout: '60'
   local: 'true'
 provisioner: io.openebs.csi-mayastor
+allowVolumeExpansion: true
 volumeBindingMode: WaitForFirstConsumer
