@@ -122,3 +122,7 @@ This repo is intented for my own personal use controlling the kubernetes setup i
 - delete insecure secret file
 
         rm discord-url.yaml
+
+
+# To-Do
+- add mayastor configuration to repo
