@@ -178,6 +178,14 @@
     - name: apply talos config
       command: talosctl apply-config --insecure --nodes "{{ temp_ip_address }}"  --file "./files/controlplane_{{ guest_name }}.yaml"
 
+    - name: wait 30 seconds for config to apply
+      wait_for:
+        timeout: 30
+
+    - name: apply talos hostname
+      shell: >
+        talosctl patch --mode=no-reboot machineconfig --nodes "{{ temp_ip_address }}" --patch '{"op": "add", "path": "/machine/network", "value": {"hostname": "{{ guest_name }}"}}'
+
     - name: debug guest_name
       debug:
         msg: "Created control node {{ guest_name }}"
