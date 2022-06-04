@@ -12,9 +12,9 @@ spec:
   include:
     - repository:
         name: other-repository      
-        url: https://github.com/openebs/mayastor-control-plane.git
-        ref:
-          tag: v1.0.1      
+      url: https://github.com/openebs/mayastor-control-plane.git
+      ref:
+        tag: v1.0.1      
       fromPath: /deploy/
       toPath: mayastor-control-plane
   ignore: |
