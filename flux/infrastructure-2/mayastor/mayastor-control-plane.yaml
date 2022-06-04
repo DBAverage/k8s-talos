@@ -6,6 +6,7 @@ metadata:
 spec:
   interval: 15m
   prune: false
+  path: /deploy
   sourceRef:
     kind: GitRepository
     name: mayastor-control-plane

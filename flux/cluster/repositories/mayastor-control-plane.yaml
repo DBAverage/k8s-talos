@@ -14,10 +14,3 @@ spec:
     /*
     # except
     !/deploy/operator-rbac.yaml
-    !/deploy/mayastorpoolcrd.yaml
-    !/deploy/core-agents-deployment.yaml
-    !/deploy/csi-deployment.yaml
-    !/deploy/msp-deployment.yaml
-    # exclude subdirectories
-    /deploy/terraform/**
-    /deploy/jaeger-operator/**
