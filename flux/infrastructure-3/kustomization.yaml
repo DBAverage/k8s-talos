@@ -4,6 +4,6 @@ kind: Kustomization
 resources:
   #- rook-ceph-cluster
   - traefik
-  #- nfs
+  - nfs
   #- sops
   - mayastor
