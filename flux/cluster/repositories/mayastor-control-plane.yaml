@@ -19,5 +19,5 @@ spec:
     !/deploy/csi-deployment.yaml
     !/deploy/msp-deployment.yaml
     # exclude subdirectories
-    /deploy/terraform/*
-    /deploy/jaeger-operator/*    
+    /deploy/terraform/**
+    /deploy/jaeger-operator/**
