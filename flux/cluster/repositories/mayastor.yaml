@@ -13,4 +13,11 @@ spec:
     # exclude all
     /*
     # except
-    !/deploy
+    !/deploy/nats-deployment.yaml
+    !/deploy/etcd/storage/localpv.yaml
+    !/deploy/etcd/statefulset.yaml 
+    !/deploy/etcd/svc.yaml
+    !/deploy/etcd/svc-headless.yaml
+    !/deploy/csi-daemonset.yaml
+    !/deploy/mayastor-daemonset.yaml
+

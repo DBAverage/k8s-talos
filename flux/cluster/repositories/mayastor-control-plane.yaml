@@ -13,4 +13,8 @@ spec:
     # exclude all
     /*
     # except
-    !/deploy
+    !/deploy/operator-rbac.yaml
+    !/deploy/mayastorpoolcrd.yaml
+    !/deploy/core-agents-deployment.yaml
+    !/deploy/csi-deployment.yaml
+    !/deploy/msp-deployment.yaml
