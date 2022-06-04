@@ -11,6 +11,10 @@ spec:
     tag: v1.0.1
   ignore: |
     # exclude all
-    /*
-    # except
+    */
+    # except deploy folder
+    !/deploy
+    # exclude all files in deploy folder
+    /deploy/*
+    #except these specific files
     !/deploy/operator-rbac.yaml
