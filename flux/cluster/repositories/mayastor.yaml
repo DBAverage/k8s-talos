@@ -9,14 +9,6 @@ spec:
   url: https://github.com/openebs/mayastor.git
   ref:
     tag: v1.0.1
-  include:
-    - repository:
-        name: other-repository      
-      url: https://github.com/openebs/mayastor-control-plane.git
-      ref:
-        tag: v1.0.1      
-      fromPath: /deploy/
-      toPath: mayastor-control-plane
   ignore: |
     # exclude all
     /*
@@ -28,10 +20,4 @@ spec:
     !/deploy/etcd/svc-headless.yaml
     !/deploy/csi-daemonset.yaml
     !/deploy/mayastor-daemonset.yaml
-
-    !/mayastor-control-plane/deploy/operator-rbac.yaml
-    !/mayastor-control-plane/deploy/mayastorpoolcrd.yaml
-    !/mayastor-control-plane/deploy/core-agents-deployment.yaml
-    !/mayastor-control-plane/deploy/csi-deployment.yaml
-    !/mayastor-control-plane/deploy/msp-deployment.yaml    
 
