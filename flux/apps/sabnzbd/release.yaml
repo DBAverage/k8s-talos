@@ -37,4 +37,4 @@ spec:
         #mountPath: /NAS
     podSecurityContext:
       supplementalGroups:
-        - 100
+        - 568
