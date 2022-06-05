@@ -26,3 +26,4 @@ spec:
           url: http://prometheus-prometheus-server.prometheus.10.96.103.184
           access: proxy
           isDefault: true
+    strongpassword: Password1!
