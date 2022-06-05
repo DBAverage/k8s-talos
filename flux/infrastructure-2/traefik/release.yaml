@@ -24,4 +24,4 @@ spec:
       general:
         level: ERROR
       access:
-        enabled: false   
+        enabled: true   
