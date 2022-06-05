@@ -9,7 +9,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`prometheus.mushroomkingdom.io`) && (PathPrefix(`/alertmanager`)
+      match: Host(`prometheus-alertmanager.mushroomkingdom.io`)
       services:
         - name: prometheus-prometheus-alertmanager
           port: 80
