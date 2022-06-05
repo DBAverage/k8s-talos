@@ -20,6 +20,7 @@ spec:
   values:
     env:
       TZ: "America/New_York"
+      TRANSMISSION_DOWNLOAD_DIR: "/NAS/Download/complete/misc"
     image:
       tag: "v3.00"
     podSecurityContext:

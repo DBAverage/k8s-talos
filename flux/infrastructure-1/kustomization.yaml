@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
   #- cert-manager # hoping to instead configure traefiks acme server
   - metallb-system
+  - mayastor
+  - nfs
