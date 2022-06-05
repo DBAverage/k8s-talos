@@ -4,3 +4,4 @@ resources:
   - sabnzbd
   - sonarr
   - radarr
+  - transmission
