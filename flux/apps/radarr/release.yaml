@@ -21,7 +21,7 @@ spec:
     env:
       TZ: "America/New_York"
     image:
-      tag: "v4.0.4.5922" # "v4.1.0.6175"
+      tag: "v4.1.0.6175"
     podSecurityContext:
       runAsUser: 568
       runAsGroup: 568
