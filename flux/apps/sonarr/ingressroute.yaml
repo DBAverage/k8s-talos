@@ -9,7 +9,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`sonarr.mushroomkingdom.io`)
+      match: Host(`sonarr.mushroomkingdom.com`)
       services:
         - name: sonarr
           port: 8989
