@@ -9,7 +9,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`sabnzbd.mushroomkingdom.com`)
+      match: Host(`sabnzbd.mushroomkingdom.io`)
       services:
         - name: sabnzbd
           port: 8080      
