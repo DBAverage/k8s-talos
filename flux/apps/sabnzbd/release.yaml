@@ -35,6 +35,6 @@ spec:
             #server: 192.168.1.12
             #path: /volume1/NAS
         #mountPath: /NAS
-    podSecurityContext:
-      supplementalGroups:
-        - 568
+    securityContext:
+      runAsUser: 1000
+      runAsGroup: 1000
