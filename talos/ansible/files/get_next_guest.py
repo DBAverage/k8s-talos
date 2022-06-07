@@ -11,10 +11,14 @@ for guest in vm_guests:
     
     if guest['guest_name'].startswith(guest_base):
         try:
-            if int(guest['guest_name'][-1])> top_guest:
-                top_guest = int(guest['guest_name'][-1])
+            if int(guest['guest_name'][-2:]) > top_guest:
+                top_guest = int(guest['guest_name'][-2:])
         except ValueError:
-            pass
+            try:
+                if int(guest['guest_name'][-1]) > top_guest:
+                    top_guest = int(guest['guest_name'][-1])
+            except ValueError:
+                pass
 
 guest_number = top_guest + 1
 
