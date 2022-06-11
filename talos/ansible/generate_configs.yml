@@ -22,7 +22,6 @@
       
       cluster_name: k8s
       
-
     tasks:
 
     - name: set cluster endpoint 

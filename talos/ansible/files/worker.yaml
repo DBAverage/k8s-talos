@@ -55,7 +55,7 @@ machine:
         #         - fdc7::/16
     # Provides machine specific network configuration options.
     network:
-        hostname: temp # Used to statically set the hostname for the machine.
+        hostname: kube # Used to statically set the hostname for the machine.
         
         # # `interfaces` is used to define the network interface configuration.
         # interfaces:
@@ -228,8 +228,6 @@ machine:
     #     bootTimeout: 2m0s # Specifies the timeout when the node time is considered to be in sync unlocking the boot sequence.
 
     # # Used to configure the machine's sysctls.
-    sysctls:
-        vm.hugepages: 1024
             
     # # MachineSysctls usage example.
     # sysctls:

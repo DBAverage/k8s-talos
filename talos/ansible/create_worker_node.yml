@@ -10,12 +10,12 @@
     vars:
 
       guest_base: kube
-      datastore: esxi-2.2
+      datastore: esxi-2.1
       vm_folder: Datacenter/vm/Kubernetes
 
       cpu_cores: 4
-      ram_mb: 8192
-      disk_size_gb: 10
+      ram_mb: 16384
+      disk_size_gb: 50
       
       cluster_name: k8s
 
